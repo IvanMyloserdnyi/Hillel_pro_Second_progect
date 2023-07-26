@@ -1,0 +1,48 @@
+
+.header {
+    grid-area: header;
+    background: #F6F7FF;
+    height: 91px;
+}
+.header_wrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 34px 87px 34px 100px;
+}
+.logo_section {
+    display: flex;
+    flex-direction: row;
+}
+.logo_section img {
+    width: 23px;
+    height: 23px;
+}
+.logo_section p {
+    color: #1F1E25;
+    font-family: Work-Sans, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 23px;
+    margin-left: 12px;
+    margin-top: 0;
+}
+.login_section {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+}
+.login_section img {
+    width: 20px;
+    height: 22px;
+}
+.login_section p {
+    color: #1F1E25;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    margin-left: 15px;
+    margin-top: 0;
+}

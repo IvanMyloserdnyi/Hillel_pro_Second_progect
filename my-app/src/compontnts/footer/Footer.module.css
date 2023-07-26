@@ -1,0 +1,117 @@
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    gap: 89px;
+    padding: 53px 98px 60px;
+    background: #F6F7FF;
+}
+
+.footer_logo {
+    display: flex;
+    flex-direction: column;
+    max-width: 196px;
+}
+
+.footer_logo div {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer_logo img {
+    width: 23px;
+    height: 23px;
+}
+
+.footer_logo h2 {
+    color: #1F1E25;
+    font-family: Work-Sans, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 23px;
+    margin-left: 12px;
+    margin-top: 0;
+}
+
+.footer_logo p {
+    color: #707C87;
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 16.8px */
+    text-align: left;
+}
+
+.footer_nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer_nav a {
+    display: flex;
+    text-decoration: none;
+    text-align: left;
+    color: #707C87;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+}
+
+.footer_nav a.activeLink {
+    color: #2C36F2;
+}
+
+.footer_first_phone,.footer_second_phone {
+    display: flex;
+    flex-direction: row;
+}
+.footer_first_phone img,.footer_second_phone img {
+    display: flex;
+    align-self: start;
+    justify-self: start;
+}
+.footer_first_phone a,.footer_second_phone a {
+    text-decoration: none;
+}
+.footer_first_phone a div,.footer_second_phone a div {
+    margin-left: 19px;
+}
+.footer_first_phone_number,.footer_second_phone_number {
+    display: flex;
+    flex-direction: column;
+}
+.footer_first_phone_number h5,.footer_second_phone_number h5 {
+    margin: 0;
+    text-align: start;
+    color: #1F1E25;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 22.4px */
+}
+.footer_first_phone_number p,.footer_second_phone_number p {
+    text-align: start;
+    color: #707C87;
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 16.8px */
+}
+.footer_first_phone_number p {
+    width: 130px;
+}
+.footer_second_phone_number p {
+    width: 145px;
+}
+
+.footer_socials {
+
+}

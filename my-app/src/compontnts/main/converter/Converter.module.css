@@ -1,0 +1,25 @@
+
+.converter {
+    background: #F6F7FF;
+}
+.converter_container {
+    padding: 80px 202px;
+    border-radius: 4px;
+
+}
+.converter_wrapper {
+    padding: 55px 65px;
+    background: #FFF;
+
+}
+.converter_content {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+.convert_from {
+    margin-right: auto;
+}
+.convert_to {
+    margin-left: auto;
+}

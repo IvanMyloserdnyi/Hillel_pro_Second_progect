@@ -1,14 +1,14 @@
+
 .app {
-    margin: 0 auto;
-    display: grid;
-    width: 1200px;
-    grid-template-rows: 60px 1fr;
-    grid-template-columns: 2fr 10fr;
-    grid-template-areas:
-  "header header"
-  "nav main"
+  display: flex;
+  height: 100%;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
 }
-.main {
-    grid-area: main;
-    background-color: gold;
+.app_wrapper {
+  display: grid;
+  grid-template-areas: 'header' 'main' 'footer';
+  text-align: center;
+  width: 1366px;
 }

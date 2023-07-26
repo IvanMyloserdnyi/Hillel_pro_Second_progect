@@ -1,0 +1,24 @@
+
+.header_nav {
+    display: flex;
+    padding: 8px 0 0 80px;
+    gap: 52px;
+}
+
+.header_nav a {
+    color: #707C87;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.header_nav a:not(:first-child) {
+
+}
+
+.header_nav a.activeLink {
+    color: #2C36F2;
+}
