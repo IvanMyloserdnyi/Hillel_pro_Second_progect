@@ -1,4 +1,4 @@
-import s from './HeaderNav.module.css'
+import s from './Nav.module.css'
 import {NavLink} from "react-router-dom";
 
 const headerNavContent =[
@@ -19,13 +19,13 @@ const headerNavContent =[
         path:'/questions/*'
     }
     ]
-export function HeaderNav() {
+export function Nav(props) {
+    const direction = props.direction
     return (
-        <div className={s.header_nav}>
+        <div className={`${s.header_nav} ${s[direction]}`}>
             {headerNavContent.map((navContent)=>(
                 <NavLink key={navContent.path} to={navContent.path} className = { navStyle => navStyle.isActive ? s.activeLink : null }>{navContent.content}</NavLink>
             ))}
-
         </div>
     )
 }

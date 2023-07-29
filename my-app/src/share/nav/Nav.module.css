@@ -1,10 +1,17 @@
 
 .header_nav {
     display: flex;
-    padding: 8px 0 0 80px;
-    gap: 52px;
 }
-
+.row {
+    flex-direction: row;
+    gap: 52px;
+    padding: 8px 0 0 80px;
+}
+.column {
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+}
 .header_nav a {
     color: #707C87;
     font-family: Roboto, sans-serif;
@@ -15,9 +22,6 @@
     text-decoration: none;
 }
 
-.header_nav a:not(:first-child) {
-
-}
 
 .header_nav a.activeLink {
     color: #2C36F2;

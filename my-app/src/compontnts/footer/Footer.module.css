@@ -35,58 +35,26 @@
     margin-top: 0;
 }
 
-.footer_logo p {
-    color: #707C87;
-    font-family: Roboto, sans-serif;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 140%; /* 16.8px */
-    text-align: left;
-}
-
-.footer_nav {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.footer_nav a {
-    display: flex;
-    text-decoration: none;
-    text-align: left;
-    color: #707C87;
-    font-family: Roboto, sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 140%;
-}
-
-.footer_nav a.activeLink {
-    color: #2C36F2;
-}
-
-.footer_first_phone,.footer_second_phone {
+.phone {
     display: flex;
     flex-direction: row;
 }
-.footer_first_phone img,.footer_second_phone img {
+.phone img {
     display: flex;
     align-self: start;
     justify-self: start;
 }
-.footer_first_phone a,.footer_second_phone a {
+.phone a {
     text-decoration: none;
 }
-.footer_first_phone a div,.footer_second_phone a div {
+.phone a div {
     margin-left: 19px;
 }
-.footer_first_phone_number,.footer_second_phone_number {
+.phone_number {
     display: flex;
     flex-direction: column;
 }
-.footer_first_phone_number h5,.footer_second_phone_number h5 {
+.phone_number h5 {
     margin: 0;
     text-align: start;
     color: #1F1E25;
@@ -96,7 +64,7 @@
     font-weight: 500;
     line-height: 140%; /* 22.4px */
 }
-.footer_first_phone_number p,.footer_second_phone_number p {
+.phone_number p {
     text-align: start;
     color: #707C87;
     font-family: Roboto, sans-serif;
@@ -105,10 +73,7 @@
     font-weight: 400;
     line-height: 140%; /* 16.8px */
 }
-.footer_first_phone_number p {
-    width: 130px;
-}
-.footer_second_phone_number p {
+.phone_number p {
     width: 145px;
 }
 

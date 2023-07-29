@@ -9,24 +9,6 @@
     flex-direction: row;
     padding: 34px 87px 34px 100px;
 }
-.logo_section {
-    display: flex;
-    flex-direction: row;
-}
-.logo_section img {
-    width: 23px;
-    height: 23px;
-}
-.logo_section p {
-    color: #1F1E25;
-    font-family: Work-Sans, sans-serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 23px;
-    margin-left: 12px;
-    margin-top: 0;
-}
 .login_section {
     display: flex;
     flex-direction: row;

@@ -17,9 +17,9 @@
     flex-direction: row;
     margin: 0 auto;
 }
-.convert_from {
+.left {
     margin-right: auto;
 }
-.convert_to {
+.right {
     margin-left: auto;
 }
