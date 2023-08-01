@@ -23,3 +23,190 @@
 .right {
     margin-left: auto;
 }
+.arrows {
+    margin-top: 80px;
+    width: 22px;
+    height: 22px;
+}
+.select {
+/*    width: 120px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-position: right;*/
+    margin-left: 15px;
+    background-image: url(../../../images/main/converter/currency.svg);
+    appearance: none;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: 85px 50%;
+    padding: 15px;
+    width: 120px;
+    height: 60px;
+    border-radius: 4px;
+    border: 1px solid #C1C2CA;
+    color: #707C87;
+    font-family: 'Roboto',sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 28px */
+
+}
+.input {
+    width: 220px;
+    height: 60px;
+    border-radius: 4px;
+    border: 1px solid #C1C2CA;
+    color: #707C87;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 28px */
+}
+
+
+.custom_calendar_area {
+     display: flex;
+     flex-direction: row;
+ }
+.custom_calendar_wrapper {
+    margin-right: auto;
+}
+.custom_calendar_area button {
+    width: 220px;
+    height: 60px;
+    margin-top: 24px;
+    border-radius: 4px;
+    background: #2C36F2;
+}
+.custom_calendar_area button span {
+    color: #F6F7FF;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+}
+input::-webkit-calendar-picker-indicator {
+     opacity: 0;
+ }
+
+.custom_calendar {
+    background-image: url(../../../images/main/converter/calendar.svg);
+    background-repeat: no-repeat;
+    background-position: 170px 50%;
+    width: 180px;
+    height: 30px;
+    margin-top: 24px;
+    padding: 15px 20px;
+    border-radius: 4px;
+    border: 1px solid #C1C2CA;
+    color: #707C87;
+    font-family: 'Roboto',sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 28px */
+}
+
+
+.history {
+    padding: 80px 202px;
+    background: #FFF;
+}
+.history_wrapper {
+    width: 962px;
+    height: 397px;
+    border-radius: 4px;
+    background: #F6F7FF;
+    padding: 40px 65px 58px;
+}
+.history_description {
+    display: flex;
+    flex-direction: row;
+}
+.history_description h2 {
+    color: #1F1E3F;
+    font-family: Roboto, sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 39.2px */
+}
+.history_description button {
+    width: 187px;
+    height: 51px;
+    margin-left: auto;
+    margin-right: 3px;
+    align-self: center;
+    border-radius: 4px;
+    background: #2C36F2;
+}
+.history_description button span {
+    color: #F6F7FF;
+    text-align: center;
+    font-family: Roboto sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.history_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 25px;
+    row-gap: 16px;
+    column-gap: 48px;
+}
+.history_content__container {
+
+    width: 392px;
+    height: 42px;
+/*    width: calc(50% - 10px);
+    height: 42px;*/
+    border-radius: 4px;
+    background: #FFF;
+}
+.history_content__wrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 15px 25px 15px 16px;
+}
+.history_content__wrapper p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.history_content__date {
+    color: #C1C2CA;
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 23.4px */
+}
+.history_content__change_from {
+    margin-left: 15px;
+    color: #707C87;
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 23.4px */
+}
+.history_content img {
+    width: 14px;
+    height: 10px;
+    margin: 5px 20px;
+}
+.history_content__change_to {
+    color: #707C87;
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%; /* 23.4px */
+}

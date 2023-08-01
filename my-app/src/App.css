@@ -1,4 +1,68 @@
 
+/*Roboto*/
+@font-face {
+  font-family: 'Roboto';
+  src: url('./fonts/roboto/Roboto-Thin.ttf') format('ttf');
+  font-weight: 100; /* Товщина 100 (Thin) */
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('./fonts/roboto/Roboto-Light.ttf') format('ttf');
+  font-weight: 300; /* Товщина 300 (Light) */
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('./fonts/roboto/Roboto-Regular.ttf') format('ttf');
+  font-weight: 400; /* Товщина 400 (Regular) */
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('./fonts/roboto/Roboto-Medium.ttf') format('ttf');
+  font-weight: 500; /* Товщина 500 (Medium) */
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('./fonts/roboto/Roboto-Bold.ttf') format('ttf');
+  font-weight: 700; /* Товщина 700 (Bold) */
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('./fonts/roboto/Roboto-Black.ttf') format('ttf');
+  font-weight: 900; /* Товщина 900 (Black) */
+}
+
+/*Work Sans*/
+@font-face {
+  font-family: 'Work-Sans';
+  src: url('./fonts/work_sans/WorkSans-Thin.ttf') format('ttf');
+  font-weight: 100; /* Товщина 100 (Thin) */
+}
+@font-face {
+  font-family: 'Work-Sans';
+  src: url('./fonts/work_sans/WorkSans-Light.ttf') format('ttf');
+  font-weight: 300; /* Товщина 300 (Light) */
+}
+@font-face {
+  font-family: 'Work-Sans';
+  src: url('./fonts/work_sans/WorkSans-Regular.ttf') format('ttf');
+  font-weight: 400; /* Товщина 400 (Regular) */
+}
+@font-face {
+  font-family: 'Work-Sans';
+  src: url('./fonts/work_sans/WorkSans-Medium.ttf') format('ttf');
+  font-weight: 500; /* Товщина 500 (Medium) */
+}
+@font-face {
+  font-family: 'Work-Sans';
+  src: url('./fonts/work_sans/WorkSans-Bold.ttf') format('ttf');
+  font-weight: 700; /* Товщина 700 (Bold) */
+}
+@font-face {
+  font-family: 'Work-Sans';
+  src: url('./fonts/work_sans/WorkSans-Black.ttf') format('ttf');
+  font-weight: 900; /* Товщина 900 (Black) */
+}
+
 .app {
   display: flex;
   height: 100%;
