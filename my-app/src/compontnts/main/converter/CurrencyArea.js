@@ -13,7 +13,7 @@ export function CurrencyArea({valueHandler,inputHandler,currencyHandler,currency
                     <option value="USD">USD</option>
                     <option value="EUR">EUR</option>
                     <option value="GBP">GBP</option>
-                    <option value="CNY">CNY</option>
+                    <option value="CNY">CNY</option>{/*// отрисовывать через меп*/}
                 </select>
             </div>
         </div>

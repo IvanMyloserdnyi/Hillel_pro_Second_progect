@@ -2,8 +2,8 @@ import s from './Converter.module.css'
 import {useState, useEffect} from 'react';
 import {CurrencyArea} from "./CurrencyArea";
 import {CustomCalendar} from "./CustomCalendar";
-import arrowsImg from '../../../images/main/converter/arrows.svg';
 import {History} from "./History";
+import arrowsImg from '../../../images/main/converter/arrows.svg';
 
 const data = {
     firstCurrency: {
@@ -18,20 +18,23 @@ const data = {
 
 export function Converter() {
 
-    function getFormattedCurrentDate() {
-        const currentDate = new Date();
-        const year = currentDate.getFullYear();
-        const month = String(currentDate.getMonth() + 1).padStart(2, '0');
-        const day = String(currentDate.getDate()).padStart(2, '0');
-        return `${year}-${month}-${day}`;
-    }
-
     const url = 'https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json'
     const [rates, setRates] = useState([])
     const [valueFrom, setValueFrom] = useState(0);
     const [valueTo, setValueTo] = useState(0);
     const [currencyFrom, setCurrencyFrom] = useState('UAH');
     const [currencyTo, setCurrencyTo] = useState('UAH');
+    const [historyExchangeData, setHistoryExchangeData] = useState([])
+    const historyExchangeDataCount = 10
+    function getFormattedCurrentDate() {
+        const currentDate = new Date();
+        const year = currentDate.getFullYear();
+        const month = String(currentDate.getMonth() + 1).padStart(2, '0');
+        const day = String(currentDate.getDate()).padStart(2, '0');
+
+        return `${year}-${month}-${day}`;
+
+    }
 
     useEffect(() => {
         fetch(url)
@@ -39,40 +42,37 @@ export function Converter() {
             .then((data) => setRates(data))
             .catch((error) => console.error('Error fetching rates:', error));
     }, []);
-
     function getCurrentRate(rates, currency) {
         return rates.find((rate) => rate.cc === currency).rate
-    }
 
+    }
     function currencyFromConvert(evt) {
         //const currency = evt.target.value;
         setCurrencyFrom('UAH') //апи только с гривной в базе
+
     }
-
-    function currencyToConvert(evt) {
-        /*        debugger*/
-        const currency = evt.target.value;
-        setCurrencyTo(currency)
-
-        const rate = currencyFrom === currency ? 1 : getCurrentRate(rates, currency)//currencyTo? 1 : getCurrentRate(rates,currencyTo)
-        setValueTo((valueFrom / rate).toFixed(2))
-    }
-
     function valueFromConvert(evt) {
         const rate = currencyFrom === currencyTo ? 1 : getCurrentRate(rates, currencyTo)
         const value = +evt.target.value;
         setValueFrom(value);
         setValueTo((value / rate).toFixed(2))
-    }
 
+    }
+    function currencyToConvert(evt) {
+        const currency = evt.target.value;
+
+        setCurrencyTo(currency)
+        const rate = currencyFrom === currency ? 1 : getCurrentRate(rates, currency)
+        setValueTo((valueFrom / rate).toFixed(2))
+
+    }
     function valueToConvert(evt) {
         const rate = currencyFrom === currencyTo ? 1 : getCurrentRate(rates, currencyTo)
         const value = +evt.target.value;
         setValueTo(value);
         setValueFrom((value * rate).toFixed(2))
-    }
 
-    const [historyExchangeData, setHistoryExchangeData] = useState([])
+    }
 
     function saveExchange() {
         const date = getFormattedCurrentDate()
@@ -81,11 +81,12 @@ export function Converter() {
             changeFrom: `${valueFrom} ${currencyFrom}`,
             changeTo: `${valueTo} ${currencyTo}`,
         };
-        const previousHistoryData = [...historyExchangeData];
-        const updatedHistoryData = [...previousHistoryData, newDataItem];
-        if (updatedHistoryData.length === 11) {
-            updatedHistoryData.shift();
+        const previousHistoryData = [...historyExchangeData]
+
+        if (previousHistoryData.length === historyExchangeDataCount) {
+            previousHistoryData.pop();
         }
+        const updatedHistoryData = [newDataItem,...previousHistoryData];
         setHistoryExchangeData(updatedHistoryData);
     }
 
@@ -121,13 +122,13 @@ export function Converter() {
                                 <CustomCalendar currentDate={getFormattedCurrentDate()}/>
                             </div>
                             <div>
-                                <button onClick={saveExchange}><span>Зберегти результат</span>></button>
+                                <button onClick={saveExchange}><span>Зберегти результат</span></button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <History data={historyExchangeData} deleteData={deleteHistoryData}/>
+            {historyExchangeData.length !== 0 && <History data={historyExchangeData} deleteData={deleteHistoryData}/>}
         </div>
     )
 }

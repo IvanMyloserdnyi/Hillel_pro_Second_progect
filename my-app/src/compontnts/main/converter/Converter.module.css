@@ -29,10 +29,6 @@
     height: 22px;
 }
 .select {
-/*    width: 120px;
-    height: 60px;
-    background-repeat: no-repeat;
-    background-position: right;*/
     margin-left: 15px;
     background-image: url(../../../images/main/converter/currency.svg);
     appearance: none;

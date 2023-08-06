@@ -10,6 +10,6 @@ export function CustomCalendar(props) {
                 value={selectedDate}
                 onChange={(e) => setSelectedDate(e.target.value)}
                 className={s.custom_calendar}
-            ></input>
+            />
     );
 }
