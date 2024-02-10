@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/Second_progect/static/css/main.36b9756a.css",
+    "main.js": "/Second_progect/static/js/main.b386efc2.js",
+    "static/js/787.28cb0dcd.chunk.js": "/Second_progect/static/js/787.28cb0dcd.chunk.js",
+    "static/media/main_background_image.png": "/Second_progect/static/media/main_background_image.aba4361623159cc58536.png",
+    "static/media/main_bottom_image.png": "/Second_progect/static/media/main_bottom_image.7cb88388e4aa4ece8245.png",
+    "static/media/main_top_image.png": "/Second_progect/static/media/main_top_image.5cf481d7f7c1f915c518.png",
+    "static/media/logo.svg": "/Second_progect/static/media/logo.9989596bc01ec963804960146cb9fb77.svg",
+    "static/media/socials_instagram.svg": "/Second_progect/static/media/socials_instagram.46b641e9a9927c2ed5c3e7ab121771f7.svg",
+    "static/media/socials_twitter.svg": "/Second_progect/static/media/socials_twitter.64f4004c0f0adc314236e4e0fc23d827.svg",
+    "static/media/old_phone_image.svg": "/Second_progect/static/media/old_phone_image.56b4517d0878550b0517e01518dbae5f.svg",
+    "static/media/calendar.svg": "/Second_progect/static/media/calendar.9138dd6cb12f088b1315.svg",
+    "static/media/phone_image.svg": "/Second_progect/static/media/phone_image.8e78133463e0c2083eb100bea34e318f.svg",
+    "index.html": "/Second_progect/index.html",
+    "static/media/arrows.svg": "/Second_progect/static/media/arrows.00bdece810695fe891c570ecf09c125f.svg",
+    "static/media/socials_youtube.svg": "/Second_progect/static/media/socials_youtube.30ee78a51d29ec811d3eee76f7a06419.svg",
+    "static/media/headerLogIn.svg": "/Second_progect/static/media/headerLogIn.b154c2582a19d2ef61074f4651490ccf.svg",
+    "static/media/arrow_right.svg": "/Second_progect/static/media/arrow_right.09846338a8ace4069ba732e1c886bbae.svg",
+    "static/media/socials_facebook.svg": "/Second_progect/static/media/socials_facebook.60d9b26c35357416553f2779a1dd6d5d.svg",
+    "static/media/currency.svg": "/Second_progect/static/media/currency.ebf0ed3b6c88663f87d9.svg",
+    "static/media/Roboto-Black.ttf": "/Second_progect/static/media/Roboto-Black.31d6cfe0d16ae931b73c.ttf",
+    "static/media/Roboto-Bold.ttf": "/Second_progect/static/media/Roboto-Bold.31d6cfe0d16ae931b73c.ttf",
+    "static/media/Roboto-Light.ttf": "/Second_progect/static/media/Roboto-Light.31d6cfe0d16ae931b73c.ttf",
+    "static/media/Roboto-Medium.ttf": "/Second_progect/static/media/Roboto-Medium.31d6cfe0d16ae931b73c.ttf",
+    "static/media/Roboto-Regular.ttf": "/Second_progect/static/media/Roboto-Regular.31d6cfe0d16ae931b73c.ttf",
+    "static/media/Roboto-Thin.ttf": "/Second_progect/static/media/Roboto-Thin.31d6cfe0d16ae931b73c.ttf",
+    "static/media/WorkSans-Black.ttf": "/Second_progect/static/media/WorkSans-Black.31d6cfe0d16ae931b73c.ttf",
+    "static/media/WorkSans-Bold.ttf": "/Second_progect/static/media/WorkSans-Bold.31d6cfe0d16ae931b73c.ttf",
+    "static/media/WorkSans-Light.ttf": "/Second_progect/static/media/WorkSans-Light.31d6cfe0d16ae931b73c.ttf",
+    "static/media/WorkSans-Medium.ttf": "/Second_progect/static/media/WorkSans-Medium.31d6cfe0d16ae931b73c.ttf",
+    "static/media/WorkSans-Regular.ttf": "/Second_progect/static/media/WorkSans-Regular.31d6cfe0d16ae931b73c.ttf",
+    "static/media/WorkSans-Thin.ttf": "/Second_progect/static/media/WorkSans-Thin.31d6cfe0d16ae931b73c.ttf",
+    "main.36b9756a.css.map": "/Second_progect/static/css/main.36b9756a.css.map",
+    "main.b386efc2.js.map": "/Second_progect/static/js/main.b386efc2.js.map",
+    "787.28cb0dcd.chunk.js.map": "/Second_progect/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.36b9756a.css",
+    "static/js/main.b386efc2.js"
+  ]
+}
